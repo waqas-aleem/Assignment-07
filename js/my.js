@@ -205,25 +205,99 @@
 
      //12. Write a js program to input month number and print number of days in that month.
            
-     function checkDay(inputcheck) {
+     function checkDay() {
        
   
-        var inputcheck = document.getElementById("checkMonthDay").value;
+        var currentTime = new Date()
+        var num1 = document.getElementById("checkMonthDay").value;
 
-         var inputcheck1 =  new Date(inputcheck); 
-         var year = inputcheck1.getFullYear();
-         var mon = inputcheck1.getMonth();
-         var days = new Date(year,mon+1,0).getDate();
-
-        // mon+1 means to pick current month 0 means previous month last date
-
-        document.getElementById("result11").innerHTML =  `Days in this Month : ${days}` ;  
+        var getYear = currentTime.getFullYear();
+        var daysInMonth = new Date(getYear, num1, 0).getDate();
+        document.getElementById("result11").innerHTML =  `Days in this Month : ${daysInMonth}` ;  
            
          }
-         
-         
+
+           //13. Write a js program to count total number of notes in given amount.
+     function myProgram13() {
+
+        var amount = document.getElementById("exampleInputNo16").value;
+    
+        var notes = [5000, 500, 200, 100, 50, 20, 10, 5, 1];
+        var noteCounter = Array(9).fill(0);
+    
+        for (let i = 0; i < 9; i++) {
+            if (amount >= notes[i]) {
+                noteCounter[i] = Math.floor(amount / notes[i]);
+                amount = amount - noteCounter[i] * notes[i];
+            }
+        }
+    
+    
+        document.getElementById("my-13-div-p").innerHTML = `Total number of Notes in Given Amount : `;
+    
+        var list = document.getElementById("my-13-div-p-1");
+        var listInner = "<table>";
+    
+        for (let i = 0; i < 9; i++) {
+            if (noteCounter[i] != 0) {
+                
+    
+                listInner += "<tr><td>" + notes[i] + " =  " + noteCounter[i] + "</td> </tr>";
+                
+            }
+        }
+    
+        listInner += "</table>";
+        list.innerHTML = listInner;
+    
+    
+    
+    }
 
 
+          
+// 14.Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+
+       function checkGradePer() {
+
+        var myNum1 = document.getElementById("Physics").value;
+        var myNum2 = document.getElementById("Chemistry").value;
+        var myNum3 = document.getElementById("Biology").value;
+        var myNum4 = document.getElementById("Mathematics").value;
+        var myNum5 = document.getElementById("Computer").value;
+    
+        var result = Math.round((((parseFloat(myNum1) + parseFloat(myNum2) + parseFloat(myNum3) + parseFloat(myNum4) + parseFloat(myNum5)) / 500) * 100)).toFixed(2);
+    
+    
+        document.getElementById("result13").innerHTML = `Percentage : ${result} % `;
+    
+    
+        if (parseFloat(result) >= 90) {
+            document.getElementById("result13a").innerHTML = `Grade : A `;
+        } else if (parseFloat(result) >= 80) {
+            document.getElementById("result13a").innerHTML = `Grade : B `;
+        } else if (parseFloat(result) >= 70) {
+            document.getElementById("result13a").innerHTML = `Grade : C `;
+        } else if (parseFloat(result) >= 60) {
+            document.getElementById("result13a").innerHTML = `Grade : D `;
+        } else if (parseFloat(result) >= 50) {
+            document.getElementById("result13a").innerHTML = `Grade : E `;
+        } else {
+            document.getElementById("result13a").innerHTML = `Grade : F `;
+        }
+
+           
+       }
+
+
+
+ 
 
 
 
@@ -261,12 +335,15 @@
             var da = parseInt(checkInput)*0.95 ;
 
 
-            document.getElementById("result14").innerHTML = "Gross Salary : " + (parseInt(checkInput)+ ha+da); 
+            document.getElementById("result14").innerHTML = `Gross Salary : ${ (parseInt(checkInput)+ ha+da)}`; 
            
         }
 
 
      }
+
+   
+
 
      //16. Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
      function electricityBill(checkInput) {
