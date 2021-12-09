@@ -1,195 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Js Assignment-1</title>
 </head>
+
 <body>
     <!-- Js Prog. 1 -->
     <div class="js">
 
-    <h1> Js Program to Find Maximum Number(Between 2 Inputs) </h1>
+        <h1> Js Program to Find Maximum Number(Between 2 Inputs) </h1>
 
 
-    <label for="firstNumber" > First Number :</label>
-      <input type="text" id="firstNumber" class="form-control" >
- 
-      <label for="secondNumber" class="form-label"> Second Number :</label>
-      <input type="text" id="secondNumber" class="form-control mb-3">
-       <button onclick="checkMaximumNumber();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result"></h2>
+        <label for="firstNumber"> First Number :</label>
+        <input type="text" id="firstNumber" class="form-control">
+
+        <label for="secondNumber" class="form-label"> Second Number :</label>
+        <input type="text" id="secondNumber" class="form-control mb-3">
+        <button onclick="checkMaximumNumber();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result"></h2>
+
+    </div>
+    <!-- Js Prog. 1 -->
+
+    <!-- Js Prog. 2 -->
+    <div class="js">
+        <h1> Js Program to Find Maximum Number(Between 3 Inputs) </h1>
+        <label for="firstNumber1" class="form-label "> First Number :</label>
+        <input type="text" id="firstNumber1" class="form-control">
+
+        <label for="secondNumber1" class="form-label "> Second Number :</label>
+        <input type="text" id="secondNumber1" class="form-control">
+        <label for="secondNumber1" class="form-label "> Third Number :</label>
+        <input type="text" id="thirdNumber1" class="form-control mb-3">
+        <button onclick="checkMaximumNumber2();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result1"></h2>
+    </div>
+    <!-- Js Prog. 2 -->
+
+
+
+    <!-- Js Prog. 3 -->
+    <div class="js">
+        <h1> Js Program to Find Number is Negative/Positive/Zero </h1>
+        <label for="inputcheck" class="form-label "> Input Number :</label>
+        <input type="text" id="inputcheck" class="form-control mb-3">
+        <button onclick="checkNumbercondition();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result2"></h2>
+    </div>
+    <!-- Js Prog. 3 -->
+
+
+    <!-- Js Prog. 4 -->
+    <div class="js">
+        <h1> Js Program to Find Number is divisble By 5 or 11 </h1>
+        <label for="divisblecheck" class="form-label "> Input Number :</label>
+        <input type="text" id="divisblecheck" class="form-control mb-3">
+        <button onclick="checkNumberdivisble();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result3"></h2>
+    </div>
+    <!-- Js Prog. 4 -->
+
+
+    <!-- Js Prog. 5 -->
+    <div class="js">
+        <h1> Js Program to Find Number is Even or Odd </h1>
+        <label for="checkevenodd" class="form-label "> Input Number :</label>
+        <input type="text" id="checkevenodd" class="form-control mb-3">
+        <button onclick="checkNumberOddEven();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result4"></h2>
+    </div>
+    <!-- Js Prog. 5 -->
+
+    <!-- Js Prog. 6 -->
+    <div class="js">
+        <h1> Js Program to Find Leap year </h1>
+        <label for="checkyear" class="form-label "> Input Year :</label>
+        <input type="text" id="checkyear" class="form-control mb-3">
+        <button onclick="checkLeapYear();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result5"></h2>
+    </div>
+    <!-- Js Prog. 6 -->
+
+
+    <!-- Js Prog. 7 -->
+    <div class="js">
+        <h1> Js Program to Find Alphabet </h1>
+        <label for="checkAlpha" class="form-label "> Input Value :</label>
+        <input type="text" id="checkAlpha" class="form-control mb-3">
+        <button onclick="checkAlphabet();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result6"></h2>
+    </div>
+    <!-- Js Prog. 7 -->
+
+
+    <!-- Js Prog. 8 -->
+    <div class="js">
+        <h1> Js Program to Find Vowel / Consonant </h1>
+        <label for="checkVowel" class="form-label "> Input Value :</label>
+        <input type="text" id="checkVowel" class="form-control mb-3">
+        <button onclick="checkVowelConsoent();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result7"></h2>
+    </div>
+    <!-- Js Prog. 8 -->
+
+    <!-- Js Prog. 9 -->
+    <div class="js">
+        <h1> Js Program to Find Alphabet, Digit or Special Character </h1>
+        <label for="checkvalue" class="form-label "> Input Value :</label>
+        <input type="text" id="checkvalue" class="form-control mb-3">
+        <button onclick="checkInputValue();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result8"></h2>
+    </div>
+    <!-- Js Prog. 9 -->
+
+    <!-- Js Prog. 10 -->
+    <div class="js">
+        <h1> Js Program to Find Character is UpperCase or LowerCase </h1>
+        <label for="charInput" class="form-label "> Input Value :</label>
+        <input type="text" id="charInput" class="form-control mb-3">
+        <button onclick="checkInputUpperLower();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result9"></h2>
+    </div>
+    <!-- Js Prog. 10 -->
+
+
+    <!-- Js Prog. 11 -->
+    <div class="js">
+        <h1> Js Program to Print Week Day </h1>
+        <label for="checkday" class="form-label "> Input Value :</label>
+        <input type="text" id="checkday" class="form-control mb-3">
+        <button onclick="checkWeekDay();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result10"></h2>
+    </div>
+    <!-- Js Prog. 11 -->
+
+
+    <!-- Js Prog. 12 -->
+    <div class="js">
+        <h1> Js Program to Print Days in a month </h1>
+        <label for="checkMonthDay" class="form-label "> Input Value :</label>
+        <input type="text" id="checkMonthDay" class="form-control mb-3">
+        <input type="text" id="checkMonthDay" class="form-control mb-3">
+        <button onclick="checkDay();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result11"></h2>
+    </div>
+    <!-- Js Prog. 12 -->
+
+    <!-- Js Prog 13 -->
+    <div class="js">
+
+        <h2>Js program to count total number of notes in given amount</h2>
+
+        <form action="#">
+            <table>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="exampleInputNo16"  class="form-label ">Enter Enter Amount</label>
+                            
+                            <input type="text" class="form-control mb-3" id="exampleInputNo16" autocomplete="off" >
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <tr>
+                <td>
+                    <button type="button" onclick="myProgram13()" class="btn btn-primary text-white mb-3">Check</button>
+                </td>
+            </tr>
+        </form>
+
        
+
+        <h2 id="my-13-div-p"></h2>
+        <h2 id="my-13-div-p-1"></h2>
+
+
+
     </div>
-<!-- Js Prog. 1 -->
+    <!--  -->
 
- <!-- Js Prog. 2 -->
- <div class="js">
-    <h1> Js Program to Find Maximum Number(Between 3 Inputs) </h1>
-    <label for="firstNumber1" class="form-label "> First Number :</label>
-      <input type="text" id="firstNumber1" class="form-control" >
- 
-      <label for="secondNumber1" class="form-label "> Second Number :</label>
-      <input type="text" id="secondNumber1" class="form-control">
-      <label for="secondNumber1" class="form-label "> Third Number :</label>
-      <input type="text" id="thirdNumber1" class="form-control mb-3">
-       <button onclick="checkMaximumNumber2();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result1"></h2>
+
+    <!-- Js Prog. 14 -->
+    <div class="js">
+        <h1> Js Program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate
+            percentage and grade<br />
+            Percentage >= 90% : Grade A<br />
+            Percentage >= 80% : Grade B<br />
+            Percentage >= 70% : Grade C<br />
+            Percentage >= 60% : Grade D<br />
+            Percentage >= 40% : Grade E<br />
+            Percentage &lt; 40% : Grade F </h1>
+        <label for="Physics" class="form-label "> Enter Physics # :</label>
+        <input type="text" id="Physics" class="form-control mb-3">
+
+        <label for="Chemistry" class="form-label "> Enter Chemistry # :</label>
+        <input type="text" id="Chemistry" class="form-control mb-3">
+
+        <label for="Biology" class="form-label "> Enter Biology # :</label>
+        <input type="text" id="Biology" class="form-control mb-3">
+
+
+        <label for="Mathematics" class="form-label "> Enter Mathematics # :</label>
+        <input type="text" id="Mathematics" class="form-control mb-3">
+
+        <label for="Computer" class="form-label "> Enter Computer # :</label>
+        <input type="text" id="Computer" class="form-control mb-3">
+
+        <button onclick="checkGradePer();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result13"></h2>
+        <h2 id="result13a"></h2>
     </div>
-<!-- Js Prog. 2 -->
+    <!-- Js Prog. 14 -->
 
 
 
- <!-- Js Prog. 3 -->
- <div class="js">
-    <h1> Js Program to Find Number is Negative/Positive/Zero </h1>
-    <label for="inputcheck" class="form-label "> Input Number :</label>
-      <input type="text" id="inputcheck"  class="form-control mb-3">
-       <button onclick="checkNumbercondition();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result2"></h2>
+
+
+
+    <!-- Js Prog. 15 -->
+    <div class="js">
+        <h1> Js Program to Calculate Gross Salary of Employee </h1>
+        <label for="inputSalary" class="form-label "> Input Value :</label>
+        <input type="text" id="inputSalary" class="form-control mb-3">
+        <button onclick="salaryCheck();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result14"></h2>
     </div>
-<!-- Js Prog. 3 -->
+    <!-- Js Prog. 15 -->
 
 
- <!-- Js Prog. 4 -->
- <div class="js">
-    <h1> Js Program to Find Number is divisble By 5 or 11 </h1>
-    <label for="divisblecheck" class="form-label "> Input Number :</label>
-      <input type="text" id="divisblecheck" class="form-control mb-3">
-       <button onclick="checkNumberdivisble();"  class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result3"></h2>
+    <!-- Js Prog. 16 -->
+    <div class="js">
+        <h1> Js Program to Calculate Total Electricity Bill </h1>
+        <label for="inputUnit" class="form-label "> Input Value :</label>
+        <input type="text" id="inputUnit" class="form-control mb-3">
+        <button onclick="electricityBill();" class="btn btn-primary text-white mb-3"> Check</button>
+        <h2 id="result15"></h2>
     </div>
-<!-- Js Prog. 4 -->
+    <!-- Js Prog. 16 -->
 
-
-<!-- Js Prog. 5 -->
-<div class="js">
-    <h1> Js Program to Find Number is Even or Odd </h1>
-    <label for="checkevenodd" class="form-label "> Input Number :</label>
-      <input type="text" id="checkevenodd" class="form-control mb-3" >
-       <button onclick="checkNumberOddEven();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result4"></h2>
-    </div>
-<!-- Js Prog. 5 -->
-
-<!-- Js Prog. 6 -->
-<div class="js">
-    <h1> Js Program to Find Leap year </h1>
-    <label for="checkyear" class="form-label "> Input Year :</label>
-      <input type="text" id="checkyear" class="form-control mb-3">
-       <button onclick="checkLeapYear();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result5"></h2>
-    </div>
-<!-- Js Prog. 6 -->
-
-
-<!-- Js Prog. 7 -->
-<div class="js">
-    <h1> Js Program to Find Alphabet </h1>
-    <label for="checkAlpha" class="form-label "> Input Value :</label>
-      <input type="text" id="checkAlpha" class="form-control mb-3">
-       <button onclick="checkAlphabet();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result6"></h2>
-    </div>
-<!-- Js Prog. 7 -->
-
-
-<!-- Js Prog. 8 -->
-<div class="js">
-    <h1> Js Program to Find Vowel / Consonant </h1>
-    <label for="checkVowel" class="form-label "> Input Value :</label>
-      <input type="text" id="checkVowel" class="form-control mb-3">
-       <button onclick="checkVowelConsoent();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result7"></h2>
-    </div>
-<!-- Js Prog. 8 -->
-
-<!-- Js Prog. 9 -->
-<div class="js">
-    <h1> Js Program to Find Alphabet, Digit or Special Character </h1>
-    <label for="checkvalue" class="form-label "> Input Value :</label>
-      <input type="text" id="checkvalue" class="form-control mb-3" >
-       <button onclick="checkInputValue();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result8"></h2>
-    </div>
-<!-- Js Prog. 9 -->
-
-<!-- Js Prog. 10 -->
-<div class="js">
-    <h1> Js Program to Find Character is UpperCase or LowerCase </h1>
-    <label for="charInput" class="form-label "> Input Value :</label>
-      <input type="text" id="charInput" class="form-control mb-3">
-       <button onclick="checkInputUpperLower();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result9"></h2>
-    </div>
-<!-- Js Prog. 10 -->
-
-
-<!-- Js Prog. 11 -->
-<div class="js">
-    <h1> Js Program to Print Week Day </h1>
-    <label for="checkday" class="form-label "> Input Value :</label>
-      <input type="text" id="checkday" class="form-control mb-3">
-       <button onclick="checkWeekDay();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result10"></h2>
-    </div>
-<!-- Js Prog. 11 -->
-
-
-<!-- Js Prog. 12 -->
-<div class="js">
-    <h1> Js Program to Print Days in a month </h1>
-    <label for="checkMonthDay" class="form-label "> Input Value :</label>
-      <input type="month" id="checkMonthDay" class="form-control mb-3">
-       <button onclick="checkDay();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result11"></h2>
-    </div>
-<!-- Js Prog. 12 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Js Prog. 15 -->
-<div class="js">
-    <h1> Js Program to Calculate Gross Salary of Employee </h1>
-    <label for="inputSalary" class="form-label "> Input Value :</label>
-      <input type="text" id="inputSalary" class="form-control mb-3">
-       <button onclick="salaryCheck();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result14"></h2>
-    </div>
-<!-- Js Prog. 15 -->
-
-
-<!-- Js Prog. 16 -->
-<div class="js">
-    <h1> Js Program to Calculate Total Electricity Bill </h1>
-    <label for="inputUnit" class="form-label "> Input Value :</label>
-      <input type="text" id="inputUnit" class="form-control mb-3">
-       <button onclick="electricityBill();" class="btn btn-primary text-white mb-3"> Check</button>
-       <h2 id="result15"></h2>
-    </div>
-<!-- Js Prog. 16 -->
-    
 
     <script src="./js/my.js"></script>
 </body>
+
 </html>
